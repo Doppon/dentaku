@@ -1,44 +1,43 @@
-  <SCRIPT LANGUAGE="JavaScript">
+<script>
   function calc(ch) {
     if (ch == "=") {
-    document.form1.text1.value =
-      eval(document.form1.text1.value);
+      document.form1.text1.value = eval(document.form1.text1.value);
     } else if (ch == "C") {
       document.form1.text1.value = "";
     } else {
-    document.form1.text1.value += ch;
+      document.form1.text1.value += ch;
     }
   }
-</SCRIPT>
+</script>
 
 <h1>dentaku</h1>
 
 <form NAME="form1" ACTION="">
   <table>
   <input type="text" NAME="text1" value="" SIZE=26>
-  <P>
-    <input type="button" value=" ７ " onClick="calc('7')">
-    <input type="button" value=" ８ " onClick="calc('8')">
-    <input type="button" value=" ９ " onClick="calc('9')">
-    <input type="button" value=" ＊ " onClick="calc('*')">
-  </P>
-  <p>
-    <input type="button" value=" ４ " onClick="calc('4')">
-    <input type="button" value=" ５ " onClick="calc('5')">
-    <input type="button" value=" ６ " onClick="calc('6')">
-    <input type="button" value=" ／ " onClick="calc('/')">
-  </P>
-  <p>
-    <input type="button" value=" １ " onClick="calc('1')">
-    <input type="button" value=" ２ " onClick="calc('2')">
-    <input type="button" value=" ３ " onClick="calc('3')">
-    <input type="button" value=" － " onClick="calc('-')">
-  </P>
-  <P>
-    <input type="button" value=" ０ " onClick="calc('0')">
-    <input type="button" value=" Ｃ " onClick="calc('C')">
-    <input type="button" value=" ＝ " onClick="calc('=')">
-    <input type="button" value=" ＋ " onClick="calc('+')">
-  </p>
+    <P>
+      <input type="button" value=" ７ " onClick="calc('7')">
+      <input type="button" value=" ８ " onClick="calc('8')">
+      <input type="button" value=" ９ " onClick="calc('9')">
+      <input type="button" value=" ＊ " onClick="calc('*')">
+    </P>
+    <p>
+      <input type="button" value=" ４ " onClick="calc('4')">
+      <input type="button" value=" ５ " onClick="calc('5')">
+      <input type="button" value=" ６ " onClick="calc('6')">
+      <input type="button" value=" ／ " onClick="calc('/')">
+    </P>
+    <p>
+      <input type="button" value=" １ " onClick="calc('1')">
+      <input type="button" value=" ２ " onClick="calc('2')">
+      <input type="button" value=" ３ " onClick="calc('3')">
+      <input type="button" value=" － " onClick="calc('-')">
+    </P>
+    <P>
+      <input type="button" value=" ０ " onClick="calc('0')">
+      <input type="button" value=" Ｃ " onClick="calc('C')">
+      <input type="button" value=" ＝ " onClick="calc('=')">
+      <input type="button" value=" ＋ " onClick="calc('+')">
+    </p>
   </table>
 </form>
