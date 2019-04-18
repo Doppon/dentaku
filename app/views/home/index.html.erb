@@ -1,8 +1,20 @@
 <h1>dentaku</h1>
 
-<form name="calc-form" action="">
+<script type="application/javascript">
+  function calc(ch) {
+    if (ch == "=") {
+      document.calc_form.calc_body.value = eval(document.calc_form.calc_body.value);
+    } else if (ch == "C") {
+      document.calc_form.calc_body.value = "";
+    } else {
+      document.calc_form.calc_body.value += ch;
+    }
+  }
+</script>
+
+<form name="calc_form" action="">
   <table>
-  <input type="text" name="calc-body" value="" size=23>
+  <input type="text" name="calc_body" value="" size=23>
     <P>
       <input type="button" value=" ７ " onClick="calc('7')">
       <input type="button" value=" ８ " onClick="calc('8')">
@@ -30,14 +42,3 @@
   </table>
 </form>
 
-<script>
-  function calc(ch) {
-    if (ch == "=") {
-      document.calc-form.calc-body.value = eval(document.calc-form.calc-body.value);
-    } else if (ch == "C") {
-      document.calc-form.calc-body.value = "";
-    } else {
-      document.calc-form.calc-body.value += ch;
-    }
-  }
-</script>
