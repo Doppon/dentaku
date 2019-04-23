@@ -1,12 +1,12 @@
 <script type="application/javascript">
   function calc(ch) {
-    if (ch == "=") {
-      if (document.getElementById('calc').value == "") {
+    if (ch === "=") {
+      if (document.getElementById('calc').value === "") {
         document.getElementById('calc').value = ""
       } else {
         document.getElementById('calc').value = eval(document.getElementById('calc').value);
       }
-    } else if (ch == "C") {
+    } else if (ch === "C") {
       document.getElementById('calc').value = "";
     } else {
       document.getElementById('calc').value += ch;
@@ -31,7 +31,7 @@
     <button type="button" value="2" onClick="calc('2')">2</button>
     <button type="button" value="3" onClick="calc('3')">3</button>
     <button type="button" value="0" onClick="calc('0')">0</button>
-    <button type="button" class="decimal" value=".">.</button>
+    <button type="button" class="decimal" value="." onClick="calc('.')">.</button>
     <button type="button" class="all-clear" value="all-clear" onClick="calc('C')">AC</button>
     <button type="button" class="equal-sign" value="=" onClick="calc('=')">=</button>
   </div>
