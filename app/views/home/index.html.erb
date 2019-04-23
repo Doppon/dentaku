@@ -1,8 +1,11 @@
 <script type="application/javascript">
   function calc(ch) {
-    // ToDo: undefinedののエラーハンドリングを追加
     if (ch == "=") {
-      document.getElementById('calc').value = eval(document.getElementById('calc').value);
+      if (document.getElementById('calc').value == "") {
+        document.getElementById('calc').value = ""
+      } else {
+        document.getElementById('calc').value = eval(document.getElementById('calc').value);
+      }
     } else if (ch == "C") {
       document.getElementById('calc').value = "";
     } else {
