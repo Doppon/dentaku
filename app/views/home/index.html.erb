@@ -1,6 +1,7 @@
 <script type="application/javascript">
   function calc(ch) {
     if (ch === "=") {
+      // 何も入力されていないとエラーになるのでその対策
       if (document.getElementById('calc').value === "") {
         document.getElementById('calc').value = ""
       } else {
