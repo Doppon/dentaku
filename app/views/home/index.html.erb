@@ -25,9 +25,11 @@
     <button type="button" value="7" onClick="calc('7')">7</button>
     <button type="button" value="8" onClick="calc('8')">8</button>
     <button type="button" value="9" onClick="calc('9')">9</button>
+    <button type="button" class="operator" value="(" onClick="calc('(')">(</button>
     <button type="button" value="4" onClick="calc('4')">4</button>
     <button type="button" value="5" onClick="calc('5')">5</button>
     <button type="button" value="6" onClick="calc('6')">6</button>
+    <button type="button" class="operator" value=")" onClick="calc(')')">)</button>
     <button type="button" value="1" onClick="calc('1')">1</button>
     <button type="button" value="2" onClick="calc('2')">2</button>
     <button type="button" value="3" onClick="calc('3')">3</button>
@@ -105,7 +107,7 @@ button:hover {
   border-color: #337cac;
   color: #fff;
   height: 100%;
-  grid-area: 2 / 4 / 6 / 5;
+  grid-area: 4 / 4 / 6 / 5;
 }
 
 .equal-sign:hover {
