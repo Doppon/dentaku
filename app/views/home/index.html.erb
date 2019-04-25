@@ -24,23 +24,23 @@
 <div class="calculator">
   <input type="text" id="calc" class="calculator-screen" value="" placeholder="0" disabled />
   <div class="calculator-keys">
-    <button type="button" class="operator" value="+" onClick="calc('+')">+</button>
-    <button type="button" class="operator" value="-" onClick="calc('-')">-</button>
-    <button type="button" class="operator" value="*" onClick="calc('*')">&times;</button>
-    <button type="button" class="operator" value="/" onClick="calc('/')">&divide;</button>
-    <button type="button" value="7" onClick="calc('7')">7</button>
-    <button type="button" value="8" onClick="calc('8')">8</button>
-    <button type="button" value="9" onClick="calc('9')">9</button>
-    <button type="button" class="operator" value="(" onClick="calc('(')">(</button>
-    <button type="button" value="4" onClick="calc('4')">4</button>
-    <button type="button" value="5" onClick="calc('5')">5</button>
-    <button type="button" value="6" onClick="calc('6')">6</button>
-    <button type="button" class="operator" value=")" onClick="calc(')')">)</button>
-    <button type="button" value="1" onClick="calc('1')">1</button>
-    <button type="button" value="2" onClick="calc('2')">2</button>
-    <button type="button" value="3" onClick="calc('3')">3</button>
-    <button type="button" value="0" onClick="calc('0')">0</button>
-    <button type="button" class="decimal" value="." onClick="calc('.')">.</button>
+    <button type="button" class="operator rotateY" value="+" onClick="calc('+')">+</button>
+    <button type="button" class="operator rotateY" value="-" onClick="calc('-')">-</button>
+    <button type="button" class="operator rotateY" value="*" onClick="calc('*')">&times;</button>
+    <button type="button" class="operator rotateY" value="/" onClick="calc('/')">&divide;</button>
+    <button type="button" class="rotateX" value="7" onClick="calc('7')">7</button>
+    <button type="button" class="rotateX" value="8" onClick="calc('8')">8</button>
+    <button type="button" class="rotateX" value="9" onClick="calc('9')">9</button>
+    <button type="button" class="operator rotateY" value="(" onClick="calc('(')">(</button>
+    <button type="button" class="rotateX" value="4" onClick="calc('4')">4</button>
+    <button type="button" class="rotateX" value="5" onClick="calc('5')">5</button>
+    <button type="button" class="rotateX" value="6" onClick="calc('6')">6</button>
+    <button type="button" class="operator rotateY" value=")" onClick="calc(')')">)</button>
+    <button type="button" class="rotateX" value="1" onClick="calc('1')">1</button>
+    <button type="button" class="rotateX" value="2" onClick="calc('2')">2</button>
+    <button type="button" class="rotateX" value="3" onClick="calc('3')">3</button>
+    <button type="button" class="rotateX" value="0" onClick="calc('0')">0</button>
+    <button type="button" class="decimal rotateY" value="." onClick="calc('.')">.</button>
     <button type="button" class="all-clear" value="all-clear" onClick="calc('C')">AC</button>
     <button type="button" class="equal-sign" value="=" onClick="calc('=')">=</button>
   </div>
@@ -138,4 +138,21 @@ button:hover {
   grid-gap: 20px;
   padding: 20px;
 }
+
+.rotateY {
+  transition-duration: 2s;
+}
+
+.rotateY:hover {
+  transform:rotateY(180deg);
+}
+
+.rotateX {
+  transition-duration: 2s;
+}
+
+.rotateX:hover {
+  transform:rotateX(180deg);
+}
+
 </style>
