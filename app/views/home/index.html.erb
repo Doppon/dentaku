@@ -15,6 +15,12 @@
   }
 </script>
 
+<!--
+<div class="intermediate-expression">
+  <p>3 + 3</p>
+</div>
+-->
+
 <div class="calculator">
   <input type="text" id="calc" class="calculator-screen" value="" placeholder="0" disabled />
   <div class="calculator-keys">
@@ -50,6 +56,18 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+}
+
+.intermediate-expression {
+  background-color: silver;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 200px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
 }
 
 .calculator {
