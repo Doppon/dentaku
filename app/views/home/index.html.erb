@@ -41,8 +41,8 @@
     <button type="button" class="rotateX" value="3" onClick="calc('3')">3</button>
     <button type="button" class="rotateX" value="0" onClick="calc('0')">0</button>
     <button type="button" class="decimal rotateY" value="." onClick="calc('.')">.</button>
-    <button type="button" class="all-clear" value="all-clear" onClick="calc('C')">AC</button>
-    <button type="button" class="equal-sign" value="=" onClick="calc('=')">=</button>
+    <button type="button" class="all-clear scale" value="all-clear" onClick="calc('C')">AC</button>
+    <button type="button" class="equal-sign rotateZ" value="=" onClick="calc('=')">=</button>
   </div>
 </div>
 
@@ -144,7 +144,7 @@ button:hover {
 }
 
 .rotateY:hover {
-  transform:rotateY(180deg);
+  transform:rotateY(360deg);
 }
 
 .rotateX {
@@ -152,7 +152,23 @@ button:hover {
 }
 
 .rotateX:hover {
-  transform:rotateX(180deg);
+  transform:rotateX(360deg);
 }
 
+.scale {
+  color:#fff;
+  transition-duration: 2s;
+}
+
+.scale:hover {
+  transform:scale(3, 3);
+}
+
+.rotateZ {
+  transition-duration: 1s;
+}
+
+.rotateZ:hover {
+  transform:rotateZ(360deg);
+}
 </style>
